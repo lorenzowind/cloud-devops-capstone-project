@@ -1,6 +1,14 @@
 pipeline {
     agent any
         stages {
+            stage('Setup Environment') {
+                steps {
+                    echo 'Setting Up Environment...'
+                    sh '''make setup
+                          make install
+                    '''
+                }
+            }
             stage('Lint') {
                 steps {
                     echo 'Linting...'
