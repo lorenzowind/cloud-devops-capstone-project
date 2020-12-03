@@ -22,7 +22,7 @@
           app: capstone
       spec:
         containers:
-        - image: lorenzowind/capstone:latest
+        - image: lorenzowind/capstone
           imagePullPolicy: Always
           name: capstone
           ports:

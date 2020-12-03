@@ -10,7 +10,7 @@ dockerpath="lorenzowind/capstone"
 # Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag devops lorenzowind/capstone
+docker tag capstone lorenzowind/capstone
 docker login --username=lorenzowind
 
 # Step 3:

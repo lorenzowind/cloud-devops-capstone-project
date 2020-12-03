@@ -1,4 +1,3 @@
-  
 ## The Makefile includes instructions on environment setup and lint tests
 setup:
 	# Create python virtualenv & source it
@@ -12,5 +11,6 @@ install:
 	pip install -r requirements.txt
 
 lint:
-	html5validator index.html
+	pylint app.py
+
 all: setup install lint
