@@ -11,6 +11,6 @@ install:
 	pip install -r requirements.txt
 
 lint:
-	pylint app.py
+	pylint --disable=C0114,C0116 app.py
 
 all: setup install lint
